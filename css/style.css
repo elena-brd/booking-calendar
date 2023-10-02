@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #f5fcff;
+    color: #181818;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 5rem auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(172, 172, 172, 0.5);
+}
+
+/* utilities */
+img {
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid #a8dadc;
+}
+
+.bg-blue {
+    background: #1d3557;
+    color: #fff;
+}
+
+
+/* header content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.header-content .title {
+    font-size: 0.9rem;
+}
+
+.header-content .btn-exit {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* calendar */
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
+.calendar .btn-prev,
+.calendar .btn-next {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+
+.calendar .info-date {
+    margin: 0 2rem;
+}
+
+.calendar .btn-prev {
+    color: #7a7a7a;
+}
+
+.calendar .btn-next {
+    color: #1d3557;
+}
+
+.calendar .info-date h2,
+.calendar .info-date span {
+    font-weight: 700;
+}
+
+.calendar .info-date span {
+    font-size: 0.8rem;
+}
+
+/* cards  */
+.cards {
+    padding: 0 0 3rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    width: 400px;
+    margin: 0.8rem auto;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.card .info h3 {
+    font-size: 1.1rem;
+}
+
+.card .info p i {
+    color: #a8dadc;
+    font-size: 0.2rem;
+}
+
+.card .info p {
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.card .info-trainer {
+    display: flex;
+    align-items: center;
+}
+
+.card .info-trainer p {
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+.card .btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.card .btn:hover {
+    background: #a8dadc;
+}
+
+@media(max-width:750px) {
+    body {
+        padding: 0 2rem;
+    }
+
+    .container {
+        max-width: 450px;
+    }
+
+    .card {
+        display: block;
+        text-align: center;
+        width: 300px;
+    }
+
+    .card .info-trainer {
+        display: block;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+}
